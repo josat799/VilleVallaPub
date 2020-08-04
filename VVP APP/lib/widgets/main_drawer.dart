@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:vvp/providers/auth.dart';
 import 'package:vvp/providers/user.dart';
 import 'package:vvp/screens/booking_screen.dart';
 import 'package:vvp/screens/party_screen.dart';
@@ -48,6 +49,16 @@ class MainDrawer extends StatelessWidget {
             title: Text("Settings"),
             trailing: Icon(Icons.settings),
             onTap: () => Navigator.of(context).pushNamed(SettingsScreen.routeName),
+          ),
+          Divider(),
+          ListTile(
+            title: Text("Logout"),
+            trailing: Icon(Icons.exit_to_app),
+            onTap: () {
+              Navigator.of(context).pop();
+              Navigator.of(context).pushReplacementNamed("/");
+              Provider.of<Auth>(context, listen: false).logout();
+            },
           ),
         ],
       ),

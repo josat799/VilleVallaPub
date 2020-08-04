@@ -26,7 +26,7 @@ class Pass {
   });
 }
 
-class BookablePass extends ChangeNotifier {
+class BookablePass with ChangeNotifier {
   List<Pass> availablePass = [
     Pass(id: DateTime.now().toString(), title: DateTime.now().toString()),
     Pass(id: DateTime.now().toString(), title: DateTime.now().toString()),

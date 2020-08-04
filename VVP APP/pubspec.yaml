@@ -26,6 +26,8 @@ dependencies:
     sdk: flutter
   shared_preferences: ^0.5.8
   flutter_web_browser: ^0.11.0
+  flutter_appavailability: ^0.0.21
+
 
 
   # The following adds the Cupertino Icons font to your application.

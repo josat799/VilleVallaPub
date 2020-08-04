@@ -13,7 +13,7 @@ enum Status {
   elderWorking, //Aktiv-gamling eller aktiv-vrak
 }
 
-class User extends ChangeNotifier {
+class User with ChangeNotifier {
   String id = "2609";
   String name = "Josef Atoui";
   String imageUrl =

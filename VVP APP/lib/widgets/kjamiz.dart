@@ -7,54 +7,16 @@ class Kjamiz extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final loadedUser = Provider.of<User>(context);
-    return Column(
-      children: <Widget>[
-        SizedBox(height: 20),
-        _buildHeader(loadedUser.name, loadedUser.phoneNumber),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            _buildImage(loadedUser.imageUrl),
-            Text(
-              "Achievements",
-            )
-          ],
-        ),
-        Text(
-          "KjamizFakta",
-          style: TextStyle(fontSize: 32),
-        ),
-        ListView.builder(
-            itemCount: loadedUser.kjamizFakta.length, itemBuilder: (ctx, i) {
-              String key = loadedUser.kjamizFakta[i].toString();
-              print(key);
-          return ListTile();
-        }),
-      ],
-    );
-  }
-
-  Container _buildHeader(String name, String phoneNumber) {
+    final mediaQuery = MediaQuery.of(context);
     return Container(
-        width: double.infinity,
-        height: 50,
-        child: Card(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-              Text(name, style: TextStyle(fontSize: 30)),
-              Text(phoneNumber, style: TextStyle(fontSize: 30)),
-            ],
-          ),
-        ));
-  }
-
-  Widget _buildImage(String imageUrl) {
-    return Container(
-      width: 150,
-      child: FittedBox(
-        fit: BoxFit.contain,
-        child: Image.network(imageUrl),
+      padding: EdgeInsets.only(top: mediaQuery.padding.top, left: 10, right: 10),
+      width: double.infinity,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Text(loadedUser.name, style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold,)),
+          GestureDetector(child: Text(loadedUser.phoneNumber,), onTap: () {},)
+        ],
       ),
     );
   }
