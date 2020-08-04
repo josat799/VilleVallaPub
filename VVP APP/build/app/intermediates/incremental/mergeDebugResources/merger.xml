@@ -95,101 +95,12 @@
         <item name="android:textAppearance">?android:attr/textAppearanceButton</item>
         <item name="android:textColor">@color/secondary_text_default_material_light</item>
         <item name="android:textSize">@dimen/notification_action_text_size</item>
-    </style></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-vi\values-vi.xml" qualifiers="vi"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zh-rCN\values-zh-rCN.xml" qualifiers="zh-rCN"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zh-rHK\values-zh-rHK.xml" qualifiers="zh-rHK"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zh-rTW\values-zh-rTW.xml" qualifiers="zh-rTW"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zu\values-zu.xml" qualifiers="zu"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.coordinatorlayout:coordinatorlayout:1.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.coordinatorlayout:coordinatorlayout:1.0.0" from-dependency="true" generated-set="androidx.coordinatorlayout:coordinatorlayout:1.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\res"><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\ae13efc3dbae5c9ee58d4933337fcd21\coordinatorlayout-1.0.0\res\values\values.xml" qualifiers=""><attr format="reference" name="coordinatorLayoutStyle"/><declare-styleable name="CoordinatorLayout">
-        
-        <attr format="reference" name="keylines"/>
-        
-        <attr format="color|reference" name="statusBarBackground"/>
-    </declare-styleable><declare-styleable name="CoordinatorLayout_Layout">
-        <attr name="android:layout_gravity"/>
-        
-        <attr format="string" name="layout_behavior"/>
-        
-        <attr format="reference" name="layout_anchor"/>
-        
-        <attr format="integer" name="layout_keyline"/>
-
-        
-        <attr name="layout_anchorGravity">
-            
-            <flag name="top" value="0x30"/>
-            
-            <flag name="bottom" value="0x50"/>
-            
-            <flag name="left" value="0x03"/>
-            
-            <flag name="right" value="0x05"/>
-            
-            <flag name="center_vertical" value="0x10"/>
-            
-            <flag name="fill_vertical" value="0x70"/>
-            
-            <flag name="center_horizontal" value="0x01"/>
-            
-            <flag name="fill_horizontal" value="0x07"/>
-            
-            <flag name="center" value="0x11"/>
-            
-            <flag name="fill" value="0x77"/>
-            
-            <flag name="clip_vertical" value="0x80"/>
-            
-            <flag name="clip_horizontal" value="0x08"/>
-            
-            <flag name="start" value="0x00800003"/>
-            
-            <flag name="end" value="0x00800005"/>
-        </attr>
-
-        
-        <attr format="enum" name="layout_insetEdge">
-            
-            <enum name="none" value="0x0"/>
-            
-            <enum name="top" value="0x30"/>
-            
-            <enum name="bottom" value="0x50"/>
-            
-            <enum name="left" value="0x03"/>
-            
-            <enum name="right" value="0x05"/>
-            
-            <enum name="start" value="0x00800003"/>
-            
-            <enum name="end" value="0x00800005"/>
-        </attr>
-        
-        <attr name="layout_dodgeInsetEdges">
-            
-            <flag name="none" value="0x0"/>
-            
-            <flag name="top" value="0x30"/>
-            
-            <flag name="bottom" value="0x50"/>
-            
-            <flag name="left" value="0x03"/>
-            
-            <flag name="right" value="0x05"/>
-            
-            <flag name="start" value="0x00800003"/>
-            
-            <flag name="end" value="0x00800005"/>
-            
-            <flag name="all" value="0x77"/>
-        </attr>
-    </declare-styleable><style name="Widget.Support.CoordinatorLayout" parent="android:Widget">
-        <item name="statusBarBackground">#000000</item>
-    </style></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.browser:browser:1.0.0$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="androidx.browser:browser:1.0.0" from-dependency="true" generated-set="androidx.browser:browser:1.0.0$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\res"><file name="browser_actions_context_menu_page" path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\res\layout\browser_actions_context_menu_page.xml" qualifiers="" type="layout"/><file name="browser_actions_context_menu_row" path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\res\layout\browser_actions_context_menu_row.xml" qualifiers="" type="layout"/><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\6eadc30b5d3d9b103652e8dca2d14aad\browser-1.0.0\res\values\values.xml" qualifiers=""><color name="browser_actions_bg_grey">#F5F5F5</color><color name="browser_actions_divider_color">#1E000000</color><color name="browser_actions_text_color">#DE000000</color><color name="browser_actions_title_color">#646464</color><dimen name="browser_actions_context_menu_max_width">500dp</dimen><dimen name="browser_actions_context_menu_min_padding">20dp</dimen></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":flutter_web_browser$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\flutter_web_browser\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":flutter_web_browser" from-dependency="true" generated-set=":flutter_web_browser$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\flutter_web_browser\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":flutter_appavailability$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\flutter_appavailability\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":flutter_appavailability" from-dependency="true" generated-set=":flutter_appavailability$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\flutter_appavailability\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":shared_preferences$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\shared_preferences\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":shared_preferences" from-dependency="true" generated-set=":shared_preferences$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\shared_preferences\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res"/><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\app\generated\res\rs\debug"/><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\app\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res"><file name="launch_background" path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\drawable\launch_background.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\main\res\values\styles.xml" qualifiers=""><style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+    </style></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-vi\values-vi.xml" qualifiers="vi"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zh-rCN\values-zh-rCN.xml" qualifiers="zh-rCN"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zh-rHK\values-zh-rHK.xml" qualifiers="zh-rHK"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zh-rTW\values-zh-rTW.xml" qualifiers="zh-rTW"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file><file path="C:\Users\josef\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\res\values-zu\values-zu.xml" qualifiers="zu"><string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string></file></source></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":device_apps$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\build\device_apps\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":device_apps" from-dependency="true" generated-set=":device_apps$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\build\device_apps\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":shared_preferences$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\build\shared_preferences\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":shared_preferences" from-dependency="true" generated-set=":shared_preferences$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\build\shared_preferences\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":clipboard_manager$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\build\clipboard_manager\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config=":clipboard_manager" from-dependency="true" generated-set=":clipboard_manager$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\build\clipboard_manager\intermediates\packaged_res\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res"/><source path="C:\Users\josef\Documents\Projects\vvp\build\app\generated\res\rs\debug"/><source path="C:\Users\josef\Documents\Projects\vvp\build\app\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res"><file name="launch_background" path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\drawable\launch_background.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\mipmap-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\mipmap-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\mipmap-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\mipmap-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="mipmap"/><file name="ic_launcher" path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\mipmap-xxxhdpi\ic_launcher.png" qualifiers="xxxhdpi-v4" type="mipmap"/><file path="C:\Users\josef\Documents\Projects\vvp\android\app\src\main\res\values\styles.xml" qualifiers=""><style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
         
         <item name="android:windowBackground">@drawable/launch_background</item>
     </style><style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
         <item name="android:windowBackground">@android:color/white</item>
-    </style></file></source><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\app\generated\res\rs\debug"/><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\build\app\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\flutter_projects\VilleVallaPub\VVP APP\android\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CoordinatorLayout">
-        
-        <attr format="reference" name="keylines"/>
-        
-        <attr format="color|reference" name="statusBarBackground"/>
-    </declare-styleable><declare-styleable name="FontFamilyFont">
+    </style></file></source><source path="C:\Users\josef\Documents\Projects\vvp\build\app\generated\res\rs\debug"/><source path="C:\Users\josef\Documents\Projects\vvp\build\app\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\android\app\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\josef\Documents\Projects\vvp\android\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="FontFamilyFont">
         
         <attr name="fontStyle">
             <enum name="normal" value="0"/>
@@ -234,83 +145,6 @@
         <attr format="integer" name="fontProviderFetchTimeout">
             
             <enum name="forever" value="-1"/>
-        </attr>
-    </declare-styleable><declare-styleable name="CoordinatorLayout_Layout">
-        <attr name="android:layout_gravity"/>
-        
-        <attr format="string" name="layout_behavior"/>
-        
-        <attr format="reference" name="layout_anchor"/>
-        
-        <attr format="integer" name="layout_keyline"/>
-
-        
-        <attr name="layout_anchorGravity">
-            
-            <flag name="top" value="0x30"/>
-            
-            <flag name="bottom" value="0x50"/>
-            
-            <flag name="left" value="0x03"/>
-            
-            <flag name="right" value="0x05"/>
-            
-            <flag name="center_vertical" value="0x10"/>
-            
-            <flag name="fill_vertical" value="0x70"/>
-            
-            <flag name="center_horizontal" value="0x01"/>
-            
-            <flag name="fill_horizontal" value="0x07"/>
-            
-            <flag name="center" value="0x11"/>
-            
-            <flag name="fill" value="0x77"/>
-            
-            <flag name="clip_vertical" value="0x80"/>
-            
-            <flag name="clip_horizontal" value="0x08"/>
-            
-            <flag name="start" value="0x00800003"/>
-            
-            <flag name="end" value="0x00800005"/>
-        </attr>
-
-        
-        <attr format="enum" name="layout_insetEdge">
-            
-            <enum name="none" value="0x0"/>
-            
-            <enum name="top" value="0x30"/>
-            
-            <enum name="bottom" value="0x50"/>
-            
-            <enum name="left" value="0x03"/>
-            
-            <enum name="right" value="0x05"/>
-            
-            <enum name="start" value="0x00800003"/>
-            
-            <enum name="end" value="0x00800005"/>
-        </attr>
-        
-        <attr name="layout_dodgeInsetEdges">
-            
-            <flag name="none" value="0x0"/>
-            
-            <flag name="top" value="0x30"/>
-            
-            <flag name="bottom" value="0x50"/>
-            
-            <flag name="left" value="0x03"/>
-            
-            <flag name="right" value="0x05"/>
-            
-            <flag name="start" value="0x00800003"/>
-            
-            <flag name="end" value="0x00800005"/>
-            
-            <flag name="all" value="0x77"/>
         </attr>
     </declare-styleable><declare-styleable name="GradientColor">
         

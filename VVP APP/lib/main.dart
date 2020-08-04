@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'dart:async';
-import 'dart:io';
-import 'package:flutter_appavailability/flutter_appavailability.dart';
 import 'package:flutter/services.dart';
-
 import 'package:provider/provider.dart';
-import 'package:vvp/providers/auth.dart';
-import 'package:vvp/providers/pass.dart';
-import 'package:vvp/screens/booking_screen.dart';
-import 'package:vvp/screens/kjamiz_screen.dart';
-import 'package:vvp/screens/login_screen.dart';
-import 'package:vvp/screens/party_screen.dart';
-import 'package:vvp/screens/settings_screen.dart';
+
+import 'package:vvp/providers/auth/auth.dart';
+import 'package:vvp/providers/news/news.dart';
+import 'package:vvp/providers/user/user.dart';
+import 'package:vvp/screens/auth/auth_screen.dart';
+import 'package:vvp/screens/news/news_screen.dart';
 import 'package:vvp/screens/splash_screen.dart';
-import 'package:vvp/screens/statistics_screen.dart';
-import './screens/home_screen.dart';
-import './providers/user.dart';
+
+
+class VVPColors {
+  static const Color VVP_RED = Color.fromRGBO(186, 22, 28, 1);
+  static const Color VVP_YELLOW = Color.fromRGBO(255, 188, 17, 1);
+}
 
 void main() {
   runApp(MyApp());
@@ -27,55 +25,57 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-
-  @override
-  void initState() {
-    super.initState();
-  }
-
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> getApps() async {
-    List<Map<String, String>> _installedApps;
-
-    if (Platform.isAndroid) {
-      print(true);
-      _installedApps = await AppAvailability.getInstalledApps();
-
-      print(await AppAvailability.checkAvailability("se.bankgirot.swish"));
-      // Returns: Map<String, String>{app_name: Chrome, package_name: com.android.chrome, versionCode: null, version_name: 55.0.2883.91}
-
-      print(await AppAvailability.isAppEnabled("com.android.chrome"));
-      // Returns: true
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
-    getApps();
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
       DeviceOrientation.portraitDown,
     ]);
-
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => Auth(),),
-        ChangeNotifierProvider(create: (_) => User(),),
-        ChangeNotifierProvider(create: (_) => BookablePass(),),
+        ChangeNotifierProvider(
+          create: (_) => Auth(),
+        ),
+        ChangeNotifierProvider (
+          create: (_) => User(),
+        ),
+        ChangeNotifierProvider(
+          create: (_) => News(),
+        ),
       ],
       child: Consumer<Auth>(
         builder: (ctx, auth, _) => MaterialApp(
-          title: "VilleValla Pub",
-          home: auth.isAuth() ? HomeScreen() : FutureBuilder(
-            future: auth.tryAutoLogin(),
-              builder: (ctx, authResultSnapshot) => authResultSnapshot.connectionState == ConnectionState.waiting ? SplashScreen() :  LoginScreen()),
-          routes: {
-            KjamizScreen.routeName: (_) => KjamizScreen(),
-            BookingScreen.routeName: (_) => BookingScreen(),
-            SettingsScreen.routeName: (_) => SettingsScreen(),
-            PartyScreen.routeName: (_) => PartyScreen(),
-            StatisticScreen.routeName: (_) => StatisticScreen(),
-          },
+          title: 'VilleValla Pub',
+          theme: ThemeData(
+            primaryColor: VVPColors.VVP_RED,
+            backgroundColor: VVPColors.VVP_RED,
+            accentColor: VVPColors.VVP_YELLOW,
+            fontFamily: 'Georgia',
+            textTheme: TextTheme(
+              bodyText1: TextStyle(fontSize: 18.0),
+              headline1: TextStyle(fontSize: 32.0, fontWeight: FontWeight.bold),
+              headline2: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
+              headline3: TextStyle(fontSize: 8.0, fontWeight: FontWeight.bold),
+              subtitle1: TextStyle(fontSize: 14.0, fontStyle: FontStyle.italic),
+            ),
+            buttonTheme: ButtonTheme.of(context).copyWith(
+              buttonColor: VVPColors.VVP_YELLOW,
+              textTheme: ButtonTextTheme.primary,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            visualDensity: VisualDensity.adaptivePlatformDensity,
+          ),
+          home: auth.isAuth()
+              ? NewsScreen()
+              : FutureBuilder(
+                  future: auth.tryAutoLogin(),
+                  builder: (ctx, authResultSnapshot) =>
+                      authResultSnapshot.connectionState ==
+                              ConnectionState.waiting
+                          ? SplashScreen()
+                          : AuthScreen()),
         ),
       ),
     );
